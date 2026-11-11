@@ -1,0 +1,7 @@
+email,role
+admin1@example.test,admin
+manager1@example.test,manager
+manager2@example.test,manager
+manager3@example.test,manager
+vendor1@example.test,vendor
+vendor2@example.test,vendor

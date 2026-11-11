@@ -1,0 +1,25 @@
+task_id,run_id,section,title,required,assignee,status,done_at
+T-1201-1,R-1201,Before move-in,Sign the lease,yes,manager1@example.test,done,2026-11-03
+T-1201-2,R-1201,Before move-in,Collect the deposit,yes,admin1@example.test,done,2026-11-04
+T-1201-3,R-1201,Handover,Read the meters,yes,vendor1@example.test,to do,
+T-1201-4,R-1201,Handover,Hand over the keys,yes,manager1@example.test,to do,
+T-1201-5,R-1201,Handover,Send the welcome pack,no,manager1@example.test,to do,
+T-1202-1,R-1202,Triage,Confirm the issue with the tenant,yes,manager2@example.test,done,2026-10-31
+T-1202-2,R-1202,Repair,Fix the boiler,yes,vendor2@example.test,done,2026-11-02
+T-1202-3,R-1202,Repair,Upload a photo of the fix,no,vendor2@example.test,to do,
+T-1203-1,R-1203,Before move-in,Sign the lease,yes,manager3@example.test,done,2026-10-29
+T-1203-2,R-1203,Before move-in,Collect the deposit,yes,admin1@example.test,done,2026-10-30
+T-1203-3,R-1203,Handover,Read the meters,yes,vendor1@example.test,done,2026-11-03
+T-1203-4,R-1203,Handover,Hand over the keys,yes,manager3@example.test,to do,
+T-1203-5,R-1203,Handover,Send the welcome pack,no,manager3@example.test,done,2026-11-04
+T-1204-1,R-1204,Prepare,Collect meter readings,yes,manager1@example.test,done,2026-11-04
+T-1204-2,R-1204,Prepare,Draft the invoices,yes,admin1@example.test,done,2026-11-05
+T-1204-3,R-1204,Send,Review the invoices,yes,admin1@example.test,to do,
+T-1204-4,R-1204,Send,Send the invoices,yes,admin1@example.test,to do,
+T-1205-1,R-1205,Triage,Confirm the issue with the tenant,yes,vendor1@example.test,done,2026-11-05
+T-1205-2,R-1205,Repair,Fix the roof,yes,vendor1@example.test,to do,
+T-1205-3,R-1205,Repair,Upload a photo of the fix,no,vendor1@example.test,to do,
+T-1206-1,R-1206,Inspection,Book the inspection,yes,manager2@example.test,done,2026-10-24
+T-1206-2,R-1206,Inspection,Inspect the flat,yes,vendor2@example.test,done,2026-10-27
+T-1206-3,R-1206,Settlement,Calculate the deposit return,yes,manager2@example.test,to do,
+T-1206-4,R-1206,Settlement,Return the keys to the owner,no,manager2@example.test,to do,

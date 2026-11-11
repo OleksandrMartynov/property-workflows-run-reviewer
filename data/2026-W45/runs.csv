@@ -1,0 +1,7 @@
+run_id,case_name,template,template_version,run_manager,status,launched_at,completed_at
+R-1201,"Flat 2A, move-in",Move-in,3,manager1@example.test,in progress,2026-11-02,
+R-1202,"Flat 6, broken boiler",Repair request,2,manager2@example.test,completed,2026-10-30,2026-11-03
+R-1203,"Flat 11, move-in",Move-in,3,manager3@example.test,completed,2026-10-28,2026-11-04
+R-1204,"Building 7, November invoicing",Monthly invoicing,1,admin1@example.test,in progress,2026-11-03,
+R-1205,"Flat 3C, leaking roof",Repair request,2,vendor1@example.test,in progress,2026-11-04,
+R-1206,"Flat 9, move-out",Move-out,1,manager2@example.test,in progress,2026-10-22,

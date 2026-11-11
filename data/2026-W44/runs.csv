@@ -1,0 +1,5 @@
+run_id,case_name,template,template_version,run_manager,status,launched_at,completed_at
+R-1101,"Apartment 12, move-in",Move-in,3,manager1@example.test,in progress,2026-10-26,
+R-1102,"Flat 4B, leaking tap",Repair request,2,manager2@example.test,completed,2026-10-20,2026-10-24
+R-1103,"Building 7, October invoicing",Monthly invoicing,1,admin1@example.test,in progress,2026-10-27,
+R-1104,"Flat 9, move-out",Move-out,1,manager2@example.test,in progress,2026-10-14,

@@ -1,0 +1,26 @@
+# Офлайн-перевірка працівника без моделі: скрипт на golden data дає відомий вердикт і коди виходу.
+# Живого виклику Claude тут немає і секретів не потрібно.
+name: offline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - run: npm test
+      - name: Синтаксис run.sh і settings.json
+        run: |
+          bash -n run.sh && bash -n run-golden.sh
+          node -e "JSON.parse(require('fs').readFileSync('.claude/settings.json','utf8'))"

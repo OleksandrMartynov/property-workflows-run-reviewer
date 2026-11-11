@@ -1,0 +1,5 @@
+{
+  "stale_after_days": 7,
+  "run_manager_roles": ["admin", "manager"],
+  "note": "Синтетична навчальна агенція. Поріг і ролі — правила ролі, їх рахує scripts/review.mjs; пояснення — у rules.md."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "property-workflows-run-reviewer",
+  "private": true,
+  "description": "Віртуальний працівник «тижневий огляд запусків» для синтетичної агенції з управління нерухомістю (бонус WS10, шлях 1 — Claude Code)",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.mjs\"",
+    "grade": "node tests/grade-report.mjs"
+  }
+}
