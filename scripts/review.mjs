@@ -17,6 +17,7 @@ const [cmd, dirArg, reportArg] = process.argv.slice(2);
 
 function fail(message) {
   console.error(`ПОМИЛКА ВХОДУ: ${message}`);
+  console.log("Код виходу: 2 (НЕ ПЕРЕВІРЕНО: вхід не прочитано)");
   process.exit(2);
 }
 
@@ -108,6 +109,7 @@ if (cmd === "check-digest") {
   console.log(
     `\n${bad.length ? "АРИФМЕТИКА: ПОМИЛКА" : "АРИФМЕТИКА: OK (дайджест узгоджений сам із собою — це ще не означає, що він правильний)"}`,
   );
+  console.log(`Код виходу: ${bad.length ? 1 : 0}`);
   console.log("###JSON###");
   console.log(JSON.stringify({ check: "digest-arithmetic", ok: bad.length === 0, mismatched: bad, overDone }));
   process.exit(bad.length ? 1 : 0);
@@ -243,6 +245,7 @@ if (cmd === "check-report") {
   for (const c of checks) console.log(`| ${c.name} | ${c.ok ? "так" : "**⚠ ні**"} |`);
   const failed = checks.filter((c) => !c.ok).map((c) => c.name);
   console.log(`\n${failed.length ? `ЗВІТ: НЕ ВІДПОВІДАЄ СКРИПТУ (${failed.length})` : "ЗВІТ: відповідає виводу скрипта"}`);
+  console.log(`Код виходу: ${failed.length ? 1 : 0}`);
   console.log("###JSON###");
   console.log(JSON.stringify({ check: "report", ok: failed.length === 0, state, failed }));
   process.exit(failed.length ? 1 : 0);
@@ -292,6 +295,7 @@ else {
   problems.forEach((p, i) => console.log(`| ${i + 1} | ${p.code} | ${cell(p.id)} | ${cell(p.detail)} |`));
 }
 console.log(`\n${problems.length ? `ОГЛЯД: ПРОБЛЕМИ (${problems.length})` : "ОГЛЯД: проблем немає"}`);
+console.log(`Код виходу: ${problems.length ? 1 : 0}`);
 console.log("###JSON###");
 console.log(
   JSON.stringify({
